@@ -1,0 +1,14 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*Material Icons*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// Global changes
+body {
+  margin: 0;
+  padding: 0;
+  // Disabled selection for visualization purposes.
+  // Not a good  UX for larger applications.
+  user-select: none;
+}
