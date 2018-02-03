@@ -1,0 +1,57 @@
+.footer-wrapper {
+  background-color: #333;
+  color: #fff;
+  padding-top: 24px;
+  padding: 24px 90px;
+}
+.footer-site-map {
+}
+.footer-content-section {
+  font-size: 18px;
+  font-weight: $Poppins;
+  line-height: 40px;
+  color: #888;
+}
+.footer-social-networks {
+  width: 70px;
+}
+
+.footer-tab-item {
+  font-weight: $Poppins;
+  font-size: 14px;
+  line-height: 32px;
+  color: #ececec;
+  padding-right: 20px;
+  @extend %opacity-effect;
+}
+
+.footer-items-per-section {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-style: none;
+}
+
+.network {
+  color: #888;
+  font-size: 20px;
+  padding-right: 15px;
+  @extend %opacity-effect;
+}
+
+.footer-company-warning {
+  color: $FamousGrey;
+  float: right;
+  position: absolute;
+  right: 90px;
+  font-weight: $PoppinsBold;
+  font-size: 12px;
+  line-height: 20px;
+}
+.footer-trademark {
+  color: $FamousGrey;
+  text-align: center;
+  font-weight: $Poppins;
+  font-size: 14px;
+  line-height: 20px;
+}

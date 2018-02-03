@@ -1,0 +1,15 @@
+.default-hr {
+  border: none;
+  height: 1px;
+  margin: 30px 0px;
+  width: 100%;
+  background: -webkit-gradient(
+    radial,
+    50% 50%,
+    0,
+    50% 50%,
+    500,
+    from(#888),
+    to(rgba(234, 234, 234, 0))
+  );
+}

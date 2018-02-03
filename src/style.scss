@@ -1,10 +1,30 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 
 /*Material Icons*/
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+// Variables
+$Poppins: 400;
+$PoppinsBold: 800;
+$FamousYellow: #fcd600;
+$FamousGrey: #888;
+$DefautlFont: 16px;
 // Global changes
+* {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,3 +32,73 @@ body {
   // Not a good  UX for larger applications.
   user-select: none;
 }
+
+.app {
+  font-size: 17px;
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 22px;
+  margin: 0 auto;
+  position: relative;
+}
+
+// Commons
+%opacity-effect {
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+// Distribuition
+.go-flex {
+  display: flex;
+}
+
+.set-vert {
+  flex-direction: column;
+}
+
+.set-align-base {
+  align-items: baseline;
+}
+
+.set-align-center {
+  align-items: center;
+}
+
+.set-align-end {
+  align-items: flex-end;
+}
+
+.set-just-center {
+  justify-content: center;
+}
+
+.set-just-end {
+  justify-content: flex-end;
+}
+
+.set-just-between {
+  justify-content: space-between;
+}
+
+.set-just-around {
+  justify-content: space-around;
+}
+
+.set-self-center {
+  align-self: center;
+}
+
+.set-self-end {
+  align-self: flex-end;
+}
+
+.cut-default {
+  margin: 0px;
+  padding: 0px;
+}
+
+// Components root style;
+@import './components/style';
