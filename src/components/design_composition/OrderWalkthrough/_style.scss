@@ -1,8 +1,5 @@
 .order-walthrough {
   background: #ececec;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 60px 70px;
   position: relative;
   z-index: 1000;
@@ -27,9 +24,9 @@
 
 .order-subtitle {
   font-family: $Poppins;
-  font-size: 16px;
+  font-size: $DefautFont;
   line-height: 20px;
-  color: #888;
+  color: $FamousGrey;
 }
 
 .order-section {

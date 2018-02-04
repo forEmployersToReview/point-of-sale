@@ -33,7 +33,7 @@ const steps = [
 
 const OrderWalkthrough = () => {
   return (
-    <Container className="order-walthrough">
+    <Container className="order-walthrough go-flex set-align-center set-just-between">
       {steps.map(({ photo, title, subtitle }, index) => (
         <Section key={`${title}${index}`} className="order-section">
           <Image pictureURL={photo} className="order-image" />

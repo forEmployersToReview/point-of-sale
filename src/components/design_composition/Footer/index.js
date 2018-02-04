@@ -46,7 +46,7 @@ const Footer = () => {
             return (
               <Section classname="footer-site-map">
                 <P className="footer-content-section">{tabs}</P>
-                <Section className="footer-items-per-section">
+                <Section className="footer-items-per-section go-flex set-vert">
                   <DisplayTabs key={`${tabs}${index}`} tabs={site_map[tabs]} />
                 </Section>
               </Section>

@@ -10,7 +10,7 @@
   font-size: 18px;
   font-weight: $Poppins;
   line-height: 40px;
-  color: #888;
+  color: $FamousGrey;
 }
 .footer-social-networks {
   width: 70px;
@@ -26,14 +26,12 @@
 }
 
 .footer-items-per-section {
-  display: flex;
-  flex-direction: column;
   text-decoration: none;
   font-style: none;
 }
 
 .network {
-  color: #888;
+  color: $FamousGrey;
   font-size: 20px;
   padding-right: 15px;
   @extend %opacity-effect;
