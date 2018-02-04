@@ -1,41 +1,16 @@
 // Modules
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // Components
 import Section from '../../elements/Section';
-import Icon from '../../elements/Icon';
 import P from '../../elements/P';
 import Container from '../../elements/Container';
 import HorizontalDivider from '../../elements/HorizontalDivider';
+import DisplayTabs from './display_tabs';
+import DisplayIcons from './display_icons';
 
 // Content
-const site_map = {
-  'Zé Delivery': [
-    'Como funciona?',
-    'Termos de Condiçōes e Politica de Privacidade',
-    'Seja nosso parceiro'
-  ],
-  Contato: ['Fale com a gente']
-};
-
-const social_networks = [
-  'fab fa-twitter',
-  'fab fa-facebook-f',
-  'fab fa-instagram'
-];
-
-const DisplayTabs = ({ tabs }) =>
-  tabs.map((topic, index) => (
-    <Link key={`${topic}${index}`} to={'#'} className="footer-tab-item">
-      {topic}
-    </Link>
-  ));
-
-const DisplayIcons = ({ networks }) =>
-  networks.map((social, index) => (
-    <i key={`${social}${index}`} className={`${social} network`} />
-  ));
+import { site_map, social_networks } from './content';
 
 const Footer = () => {
   return (
@@ -60,7 +35,9 @@ const Footer = () => {
       <HorizontalDivider />
       <Section>
         <P className="footer-company-warning">Beba com moderação</P>
-        <P className="footer-trademark">© 2017 Zé Delivery - Todos os direitos reservados.</P>
+        <P className="footer-trademark">
+          © 2017 Zé Delivery - Todos os direitos reservados.
+        </P>
       </Section>
     </Container>
   );

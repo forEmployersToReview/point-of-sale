@@ -1,4 +1,7 @@
+// Modules
 import React from 'react';
+
+// Components
 import SearchField from '../SearchField';
 import OrderWalkthrough from '../OrderWalkthrough';
 import ProductLine from '../ProductLine';
