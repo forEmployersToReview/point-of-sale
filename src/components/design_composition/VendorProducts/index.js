@@ -76,9 +76,11 @@ class VendorProducts extends Component {
           const { title, price, imageUrl } = productVariants[0];
           const product_info = product_list[title];
           let set_price = price;
+          let set_quantity = 0;
 
           if (product_info) {
             set_price = product_info.total.toFixed(2);
+            set_quantity = product_info.quantity;
           }
 
           return (
@@ -94,7 +96,7 @@ class VendorProducts extends Component {
                       <Icon className="fas fa-plus product-count-action" />
                     </Span>
                     <P className="product-count-value">
-                      {(product_info && product_info.quantity) || 0}
+                      {set_quantity}
                     </P>
                     <Span
                       onClick={() =>

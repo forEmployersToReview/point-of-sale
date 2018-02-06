@@ -2,9 +2,12 @@
 import React from 'react';
 import { PropTypes as T } from 'prop-types';
 
+// Components
+import Icon from '../../elements/Icon';
+
 const DisplayIcons = ({ networks }) =>
   networks.map((social, index) => (
-    <i key={`${social}${index}`} className={`${social} network`} />
+    <Icon key={`${social}${index}`} className={`${social} network`} />
   ));
 
 DisplayIcons.propTypes = {
