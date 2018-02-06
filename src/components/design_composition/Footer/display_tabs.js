@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const DisplayTabs = ({ tabs }) =>
   tabs.map((topic, index) => (
-    <Link key={`${topic}${index}`} to={'#'} className="footer-tab-item">
+    <Link key={`${topic}${index}`} to="#" className="footer-tab-item">
       {topic}
     </Link>
   ));
@@ -13,6 +13,5 @@ const DisplayTabs = ({ tabs }) =>
 DisplayTabs.propTypes = {
   tabs: T.arrayOf(T.string)
 };
-
 
 export default DisplayTabs;
