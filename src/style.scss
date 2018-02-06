@@ -1,16 +1,26 @@
+// UNCOMMENT THE STYLING FOR #map .map-container TO HAVE THE FAMOUSYELLOW BG
+
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 
 /*Material Icons*/
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-// Variables
+/* Variables */
 $Poppins: 400;
 $PoppinsBold: 800;
 $FamousYellow: #fcd600;
 $FamousGrey: #888;
 $DefautFont: 16px;
-// Global changes
+$RoundThatBorderButDontGoCrazy: 1px;
+$AlmostWhiteButMoreLikeGrey: #f8f8f8;
+
+/* Media */
+$desktopS: "(min-width: 1024px) and (max-width: 1280px)";
+$desktopM: "(min-width: 1280px) and (max-width: 1440px)";
+$desktopL: "(min-width: 1441px)";
+
+/* Global changes */
 * {
   font-family: 'Poppins';
   margin: 0;
@@ -41,7 +51,7 @@ body {
   position: relative;
 }
 
-// Commons
+/* Commons */
 %opacity-effect {
   transition: opacity 0.2s ease;
   &:hover {
@@ -50,7 +60,7 @@ body {
   }
 }
 
-// Distribuition
+/* Distribuition */
 .go-flex {
   display: flex;
 }
@@ -100,5 +110,67 @@ body {
   padding: 0px;
 }
 
-// Components root style;
+/* Animations */
+@keyframes slide_from_top {
+  0% {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.loader {
+  color: #fcd501;
+  font-size: 60px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  animation: load6 1s infinite ease, round 1s infinite ease;
+}
+
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em,
+      -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em,
+      -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+      -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
+      -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+      -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+      -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+
+@keyframes round {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Components root style; */
 @import './components/style';
