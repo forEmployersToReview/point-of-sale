@@ -23,5 +23,5 @@ The API key used in here is already available within the file where it's being u
 ## Built With
 
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-* [axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
+* [GprahQL](http://graphql.org/) - GraphQL is a data query language developed internally by Facebook in 2012 before being publicly released in 2015.
 * [Sass](http://sass-lang.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
