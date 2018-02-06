@@ -2,16 +2,16 @@
 import React from 'react';
 import { PropTypes as T } from 'prop-types';
 
-const Container = ({ children, className, id }) => (
-  <div id={id} className={className}>
+const Span = ({ children, className, id, onClick }) => (
+  <span id={id} className={className} onClick={onClick}>
     {children}
-  </div>
+  </span>
 );
 
-Container.propTypes = {
+Span.propTypes = {
   children: T.node,
   className: T.string,
   id: T.number
 };
 
-export default Container;
+export default Span;

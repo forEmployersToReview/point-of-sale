@@ -1,16 +1,18 @@
 .header-container {
   background: black;
   height: 15vh;
+  min-height: 120px;
   padding: 0 90px;
 }
 
 .header-logo {
   width: 272px;
   height: 92px;
+  @extend %opacity-effect;
 }
 
 .header-login-button {
-  @extend %opacity-effect !optional;
+  @extend %opacity-effect;
   font-weight: $Poppins;
   text-transform: uppercase;
   color: #fcd500;

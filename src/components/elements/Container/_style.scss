@@ -1,0 +1,10 @@
+.show-maps {
+  display: flex;
+}
+
+.hide-maps, .hide-search{
+  display: none;
+  height: 0;
+  width: 0;
+}
+

@@ -1,11 +1,3 @@
-.search-container {
-  height: 85vh;
-  width: 100vw;
-  height: 85vh;
-  z-index: 999;
-  position: relative;
-}
-
 .search-section-left {
   min-width: 50vw;
 }
@@ -28,7 +20,6 @@
 }
 
 .search-input {
-  -o-text-overflow: ellipsis;
   width: 375px;
   height: 60px;
   border: none;
@@ -37,7 +28,6 @@
   line-height: 40px;
   color: $FamousGrey;
   padding-left: 20px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 

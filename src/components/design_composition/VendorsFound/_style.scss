@@ -1,0 +1,69 @@
+.vendor-unit {
+  position: relative;
+  z-index: 10;
+  margin: 10px;
+  max-height: 100px;
+  padding: 5px;
+  border-radius: $RoundThatBorderButDontGoCrazy;
+  border: 1px solid $FamousYellow;
+  background: $FamousYellow;
+  transition: visibility 0s, opacity 0.5s linear;
+  width: inherit;
+  max-width: 14.8vw;
+  animation: 0.5s ease-in-out 0s 1 slide_from_top;
+  transition: background 0.2s ease;
+  &:hover {
+    background: #ffed00;
+    cursor: pointer;
+  }
+}
+
+.vendor-title {
+  font-weight: $Poppins;
+  font-size: $DefautFont;
+}
+.vendor-address {
+  font-size: 13px;
+  font-weight: $Poppins;
+}
+
+.vendor-phone-wrapper {
+  position: absolute;
+  bottom: 5px;
+  align-items: center;
+}
+.phone-icon {
+  font-size: 10px;
+  padding-right: 5px;
+}
+
+.vendor-phone {
+  font-size: 11px;
+  padding: 2px;
+  font-weight: $Poppins;
+}
+
+.vendor-products {
+  position: relative;
+  z-index: 20;
+  padding: 3px;
+  border-radius: $RoundThatBorderButDontGoCrazy;
+  float: right;
+  border: 1px solid $AlmostWhiteButMoreLikeGrey;
+  &:hover {
+    cursor: pointer;
+    border: 1px solid $FamousYellow;
+  }
+}
+
+.vendor-products-link {
+  max-width: 80px;
+  align-self: flex-end;
+}
+
+.vendors-parent {
+  width: 50vw;
+  @media #{$desktopL} {
+    flex-wrap: wrap;
+  }
+}
