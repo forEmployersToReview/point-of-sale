@@ -14,7 +14,7 @@ You will need npm or yarn to install any necessary packages.
 
 ### Installing
 1st: Clone the github repo by running `git clone https://github.com/Elifaz/point-of-sale.git`
-then run `npm install && npm start` from the root directory of the cloned repo to start the application on port 3000.
+2nd: run `npm install && npm start` from the root directory of the cloned repo to start the application on port 3000.
 
 ## API
 There is no .env configuration necessary for this app.
