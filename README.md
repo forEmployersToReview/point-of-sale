@@ -13,7 +13,7 @@ You will need npm or yarn to install any necessary packages.
 
 
 ### Installing
-1st: Clone the github repo by running `git clone https://github.com/Elifaz/point-of-sale.git`
+1st: Clone the github repo by running `git clone https://github.com/Elifaz/point-of-sale.git`.
 2nd: run `npm install && npm start` from the root directory of the cloned repo to start the application on port 3000.
 
 ## API
@@ -32,5 +32,5 @@ GraphQL specification was new for me, I took the weekend to learn so I could fin
 
 Although [Relay](https://facebook.github.io/relay/) was the suggested framework, I decided to go with [Apollo](https://www.apollographql.com/) for this assignment.
 
-Thank you!! 
+Thank you!!
 It was fun
