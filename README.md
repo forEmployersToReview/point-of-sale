@@ -1,5 +1,6 @@
 # PointOfSale
-A POS of beverages for the brazilian community
+A POS of beverages for the brazilian community <br />
+Use the following address on the search bar to find a POC: Rua Américo Brasiliense, São Paulo
 ## Website
 https://elifaz.github.io/point-of-sale/
 
